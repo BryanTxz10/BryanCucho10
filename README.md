@@ -14,8 +14,6 @@
   </a>
 </p>
 
-<p align="center"><code>📶 ▁▂▃▄▅▆▇█ Full Coverage — Lima 🇵🇪 → Paris 🇫🇷</code></p>
-
 <!-- SOCIAL / BADGES -->
 <p align="center">
   <a href="https://www.linkedin.com/in/bcuchos/">

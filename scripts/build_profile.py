@@ -10,7 +10,6 @@ README.md loads them from. Standard library only.
 import argparse
 import json
 import os
-import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -48,4 +47,11 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        main()
+    except Exception as err:
+        if os.environ.get("GITHUB_ACTIONS"):
+            # Surfaces the cause in the run summary, where it is readable without the logs.
+            where = getattr(err, "url", "") or getattr(err, "filename", "") or ""
+            print(f"::error title=build_profile.py::{type(err).__name__}: {err} {where}".rstrip())
+        raise

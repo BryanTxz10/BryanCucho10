@@ -1,0 +1,128 @@
+{
+  "user": "BryanTxz10",
+  "timeline": { "start": "2026-07-01", "end": "2028-07-01" },
+  "phases": [
+    { "label": "P1", "start": "2026-09-01", "end": "2026-10-31" },
+    { "label": "P2", "start": "2026-11-01", "end": "2026-12-31" },
+    { "label": "P3", "start": "2027-01-01", "end": "2027-02-28" },
+    { "label": "P4", "start": "2027-03-01", "end": "2027-04-30" },
+    { "label": "Internship", "start": "2027-06-01", "end": "2027-08-31" },
+    { "label": "3A · GIN-RIO", "start": "2027-09-01", "end": "2028-06-30" }
+  ],
+  "highlights": [
+    {
+      "icon": "🥉",
+      "kicker": "HUAWEI ICT COMPETITION 2025",
+      "title": "3rd place — Global Final",
+      "detail": "Cloud Computing track · China",
+      "color": "yellow"
+    },
+    {
+      "icon": "🎓",
+      "kicker": "B.ENG. TELECOMMUNICATIONS · UNI",
+      "title": "Top of class — GPA 4.0",
+      "detail": "Univ. Nacional de Ingeniería",
+      "color": "green"
+    },
+    {
+      "icon": "🎤",
+      "kicker": "KCD LIMA 2026 · SPEAKER",
+      "title": "Kubernetes for 5G",
+      "detail": "Cloud-native architectures talk",
+      "color": "cyan"
+    }
+  ],
+  "featured": {
+    "id": "00",
+    "file": "project-featured",
+    "kicker": "FEATURED · BACHELOR'S THESIS · UNI-FIEE",
+    "title": "Zero Trust on a Cloud-Native 5G SA Core",
+    "short": "ZTA on 5G SA Core (thesis)",
+    "summary": "Experimental testbed that measures how a Zero Trust Architecture hardens the 5G standalone core in private mining networks: microsegmentation, eBPF workload identity, L7 authorization and SPIRE mutual authentication.",
+    "stack": ["k3s", "Open5GS", "Cilium eBPF", "SPIRE", "UERANSIM", "Ansible", "GitHub Actions"],
+    "facts": ["4 ZTA conditions (C0-C3)", "declarative, reproducible deploy", "CI + security-scanned pipeline"],
+    "status": "active",
+    "start": "2026-07-09",
+    "end": "2026-12-31",
+    "url": "https://github.com/BryanTxz10/cib46-zta-5g-core"
+  },
+  "projects": [
+    {
+      "id": "01",
+      "title": "Multi-site Network Lab",
+      "summary": "Simulated 3-4 site WAN with OSPF/BGP dynamic routing, VLANs and QoS policies, documented as a customer-facing solution design.",
+      "stack": ["Containerlab", "FRRouting", "GNS3", "Wireshark"],
+      "status": "planned",
+      "start": "2027-05-01",
+      "end": "2027-05-31",
+      "pairs_with": "CCNA"
+    },
+    {
+      "id": "02",
+      "title": "Mini-CDN",
+      "summary": "Multi-region edge caching with simulated latency, benchmarked for cache hit-ratio and response time, plus a TCO comparison.",
+      "stack": ["Docker", "Nginx", "Varnish", "Redis", "tc netem"],
+      "status": "planned",
+      "start": "2026-12-01",
+      "end": "2027-01-17",
+      "pairs_with": "CSC_4GI03 · Content delivery"
+    },
+    {
+      "id": "03",
+      "title": "5G / IoT Core Lab",
+      "summary": "Extends the thesis testbed: open-source 5G core with simulated IoT devices, MQTT telemetry and a network-slicing business case.",
+      "stack": ["Open5GS", "UERANSIM", "srsRAN", "MQTT"],
+      "status": "planned",
+      "start": "2027-01-18",
+      "end": "2027-02-28",
+      "pairs_with": "CSC_4GI06 · Mobile networks & IoT"
+    },
+    {
+      "id": "04",
+      "title": "WebRTC QoS Platform",
+      "summary": "Videocall and streaming app instrumented with live quality metrics: jitter, packet loss and adaptive bitrate on a Grafana dashboard.",
+      "stack": ["WebRTC", "mediasoup", "Node.js", "Grafana"],
+      "status": "planned",
+      "start": "2027-03-01",
+      "end": "2027-04-30",
+      "pairs_with": "CSC_4GI07 · Multimedia services"
+    },
+    {
+      "id": "05",
+      "title": "IaC Consolidation",
+      "summary": "Redeploys the earlier labs as reproducible infrastructure: reusable Terraform modules, Ansible roles and a CI/CD pipeline.",
+      "stack": ["Terraform", "Ansible", "GitHub Actions", "OVHcloud"],
+      "status": "planned",
+      "start": "2027-06-01",
+      "end": "2027-08-31",
+      "pairs_with": "Terraform Associate"
+    },
+    {
+      "id": "06",
+      "title": "Cloud-Native Capstone",
+      "summary": "Microservices platform on Kubernetes with GitOps, full observability and Zero Trust mTLS, provisioned end to end with Terraform.",
+      "stack": ["Kubernetes", "ArgoCD", "Prometheus", "Istio", "Terraform"],
+      "status": "planned",
+      "start": "2027-09-15",
+      "end": "2028-03-31",
+      "pairs_with": "CKA"
+    }
+  ],
+  "extras": [
+    {
+      "id": "SP",
+      "title": "Solution Proposal Kit",
+      "status": "planned",
+      "start": "2028-02-01",
+      "end": "2028-05-31"
+    }
+  ],
+  "certifications": [
+    { "name": "AZ-900 / AWS Cloud Practitioner", "status": "planned", "start": "2026-12-01", "end": "2026-12-31" },
+    { "name": "AWS Solutions Architect Assoc.", "status": "planned", "start": "2027-01-15", "end": "2027-03-31" },
+    { "name": "CCNA", "status": "planned", "start": "2027-04-01", "end": "2027-06-30" },
+    { "name": "Terraform Associate", "status": "planned", "start": "2027-07-01", "end": "2027-08-31" },
+    { "name": "CompTIA Security+", "status": "planned", "start": "2027-09-01", "end": "2027-11-30" },
+    { "name": "CKA", "status": "planned", "start": "2027-12-01", "end": "2028-03-31" }
+  ]
+}
